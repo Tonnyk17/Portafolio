@@ -1,3 +1,11 @@
+
+:root{
+    --pink-punk: #cb0c59;
+    --pink-strong: #7b1346;
+    --blue-night: #091833;
+    --blue-sky: #133e7c;
+    --green: #0abdc6; 
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,50 +14,51 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif; 
+    
+}
+.nav-list{
+    width: 100%;
+    height: 45px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--blue-night);
+}
+.nav-list li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
     color: whitesmoke;
 }
-header{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    background-color:#202951;   
-           
-}
-header nav{
-    width: 100%;
-    text-align: center;
-}
-.main-presentation-title{
+.header-container{
     width: 100%;
     min-width: 320px;
-    max-width: 950px;
-    text-align: center;
-    font-size: 4.5rem;
-    margin: 0 auto;
-    padding-top: 20px;
-    
-    font-family: 'Big Shoulders Inline Text', cursive;
+    height: 90vh;
+    padding-top: 150px;
+    background-image: url("https://i.postimg.cc/dVxq22Sv/cyber.gif");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.nav-buttons{
+.header-container-text{
     width: 100%;
     height: auto;
-    background-color: #202951;
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--green);
 }
-.button{
-    width: 250px;
-    height: 250px;
-    margin: 50px;
-    border-radius: 100%;
-    border: 4px solid #0F1326;
+.header-container-title{
+    width: 100%;
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: left;  
+    color: white; 
     
 }
-.button:hover{
-    transform: scale(1.2);
-    box-shadow: 21px 24px 15px -2px rgba(0,0,0,0.69);
-   
-    
-}
-
-
-
-
