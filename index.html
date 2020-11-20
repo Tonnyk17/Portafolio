@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Portafolio</title>
 </head>
@@ -10,10 +14,10 @@
     <header>
         <nav>
           <ul class="nav-list">
-              <li>Inicio</li>
-              <li>Sobre mi</li>
-              <li>Portafolio</li>
-              <li>Contacto</li>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#about">Sobre mi</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <li><a href="">Contacto</a></li>
           </ul>
          </nav>
          <div class="header-container">
@@ -25,7 +29,7 @@
     </header>
     <main>
         <section class="main-section-about">
-            <h2 class="main-about-title">Sobre mi</h2>
+            <h2 class="main-about-title" id="about">Sobre mi</h2>
             <div class="main-about-container">
                 <div class="about-container-left">
                     <img id="profile-image" src="https://i.postimg.cc/VNsqxKKZ/perfil.jpg" alt="">
@@ -33,7 +37,7 @@
                 </div>
                 
                 <div class="about-container-right">
-                    <h3>Habilidades:</h3>
+                    <h3 id="about">Habilidades:</h3>
                    <div class="s1">
                        <p>HTML</p>
                        <img src="https://i.postimg.cc/dQB908PP/HTML5.png" alt="icono de html">
@@ -57,15 +61,34 @@
                    <div class="s6">
                        <p>C#</p>
                        <img src="https://i.postimg.cc/vZ17Xk1b/Csharp.png" alt="icono de c#">
-                   </div>
-                   
+                   </div> 
                 </div>
                 
-                  
-                 </div>
+              
+             </div>
            
         </section>
-        <section></section>
+        <section class="main-section-projects">
+                <h2 class="main-projects-title" id="portfolio">Portafolio</h2>
+                <div class="projects-web-container">
+                    <h3 class="web-title">Desarrollo web</h3>
+                    <div class="web-container">
+                        <img class="web-container-back" src="https://i.postimg.cc/knNktQY1/batata.png" alt="">
+                        <h4 class="web-container-title">Batatabit</h4>
+                        <p>Batatabit es un proyecto que hice tomando el Curso de Responsive Design en Platzi</p>
+                        <button class="web-button">Ir al sitio</button>
+                        <button class="web-button">Ver certificado</button>
+                    </div>
+                    <div class="web-container">
+                        <img class="web-container-back" src="https://i.postimg.cc/knNktQY1/batata.png" alt="">
+                        <h4 class="web-container-title">Batatabit</h4>
+                        <p>Batatabit es un proyecto que hice tomando el Curso de Responsive Design en Platzi</p>
+                        <button class="web-button">Ir al sitio</button>
+                        <button class="web-button">Ver certificado</button>
+                    </div>
+                   
+                <div class="projects-game-container"></div>
+        </section>
     </main>
     <footer></footer>
 </body>
