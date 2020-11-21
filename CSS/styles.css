@@ -164,8 +164,9 @@ body{
     text-align: center;
     color: white;
     font-family: 'Iceland', cursive;
+    
 }
-.projects-web-container{
+.projects-container{
     width: 100%;
     min-width: 288px;
     max-width: 400px;
@@ -179,6 +180,7 @@ body{
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--green);
+    margin-top: 10px;
 }
 .web-container{
     width: 90%;
@@ -195,12 +197,13 @@ body{
 }
 .web-container-back{
     width: 100%;
+    height: 150px;
     padding: 5px;
 }
 .web-container-title{
     width: 100%;
     text-align: center;
-    font-size: 1.4rem; 
+    font-size: 1.6rem; 
     font-weight: 500;
     padding: 5px;
     color: var(--green);
@@ -209,23 +212,59 @@ body{
     width: 95%;
     margin: 5px auto;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+.icons{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.HTML,.CSS,.GIT,.UNITY,.CSHARP{
+    width: 32px;
+    height: 32px;
+    margin: 5px auto;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.HTML{
+    background-image: url("https://i.postimg.cc/kghw6WfH/HTML-Small.png");
+}
+.CSS{
+    background-image: url("https://i.postimg.cc/k5nLRsj9/css-small.png");
+}
+.GIT{
+    background-image: url("https://i.postimg.cc/mgWvBBCP/git-small.png");
+}
+.UNITY{
+    background-image: url("https://i.postimg.cc/rFrBBK06/unity-small.png");
+}
+.CSHARP{
+    background-image: url("https://i.postimg.cc/DwQtzHPB/csharp-small.png");
 }
 .buttons{
     width: 100%;
     height: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center; 
 }
 .buttons button{
-    width: 100%;
+    width: 150px;
     height: 25px;
     margin: 10px 20px;
     border-radius: 5px;
     font-size: 1.4rem;
     font-weight: 500;
+    background-color: #181a1b;
+    border: 2px solid var(--green);
+}
+.buttons button:hover{
     background-color: var(--pink-punk);
-    
+    border: 2px solid var(--green);
+}
+.buttons button:checked{
+    border: 2px solid var(--green);
 }
 .buttons button > a{
     text-decoration: none;
