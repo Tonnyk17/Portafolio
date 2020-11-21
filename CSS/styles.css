@@ -68,9 +68,14 @@ body{
     font-weight: bold;
     text-align: left;  
     color: white; 
-    padding-bottom: 20px;
     font-family: 'Iceland', cursive;
 
+}
+.social-container{
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 5px;
 }
 .main-section-about{
     width: 100%;
@@ -269,5 +274,41 @@ body{
 .buttons button > a{
     text-decoration: none;
     color: white;  
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #242424;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+footer h2{
+    width: 90%;
+    border-top: 2px solid var(--pink-punk);
+    height: auto;
+    font-family: 'Iceland', cursive;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 10px auto;
+    padding-top: 10px;
+
+}
+footer div > p{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.4rem;
+    
+}
+footer div ~ p{
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    font-size:1.2rem;
+    padding-top: 10px;
 }
 
