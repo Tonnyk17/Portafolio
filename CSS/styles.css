@@ -295,7 +295,7 @@ footer h2{
     padding-top: 10px;
 
 }
-footer div > p{
+.contact{
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -304,7 +304,7 @@ footer div > p{
     font-size: 1.4rem;
     
 }
-footer div ~ p{
+.copyright{
     width: 100%;
     height: auto;
     margin: 5px auto;
