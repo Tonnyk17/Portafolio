@@ -169,7 +169,8 @@ background: linear-gradient(to top, #000000, #191D40);
     min-width: 320px;
     max-width: 950px;
     margin: 0 auto;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-top: 50px;
     
 }
@@ -188,7 +189,6 @@ background: linear-gradient(to top, #000000, #191D40);
 .projects-container{
     width: 100%;
     min-width: 288px;
-    max-width: 475px;
     padding-top: 20px;
     position: relative;
 }
@@ -202,7 +202,7 @@ background: linear-gradient(to top, #000000, #191D40);
     margin-top: 10px;
 }
 .web-container{
-    width: 90%;
+    width: 340px;
     height: auto;
     margin: 20px auto;
     border: 2px solid var(--green);
@@ -216,7 +216,7 @@ background: linear-gradient(to top, #000000, #191D40);
 }
 .web-container-back{
     width: 100%;
-    height: 150px;
+    height: 200px;
     padding: 5px;
 }
 .web-container-title{
@@ -232,13 +232,15 @@ background: linear-gradient(to top, #000000, #191D40);
     margin: 5px auto;
     text-align: left;
     font-size: 1.3rem;
+    height: 50px;
+    
 }
 .icons{
     width: 100%;
     height: auto;
     text-align: center;
 }
-.HTML,.CSS,.GIT,.UNITY,.CSHARP{
+.HTML,.CSS,.GIT,.UNITY,.CSHARP,.JAVASCRIPT{
     width: 32px;
     height: 32px;
     margin: 5px auto;
@@ -261,34 +263,41 @@ background: linear-gradient(to top, #000000, #191D40);
 .CSHARP{
     background-image: url("https://i.postimg.cc/DwQtzHPB/csharp-small.png");
 }
+.JAVASCRIPT{
+    background-image: url("https://i.postimg.cc/d0cyRyhQ/Jsmall.png");
+}
 .buttons{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    display: flex;
-    justify-content: center; 
+    display:grid; 
+    justify-content:center;
+    grid-template-columns: 1fr 1fr;
+    
 }
-.buttons button{
-    width: 150px;
+.buttons a{
+    font-size: 1.6rem;
+    width: 145px;
     height: 25px;
-    margin: 10px 20px;
+    margin: 10px auto;
     border-radius: 5px;
-    font-size: 1.4rem;
+   
     font-weight: 500;
+    color:white;
     background-color: #181a1b;
     border: 2px solid var(--green);
+    text-decoration:none;
+    text-align:center;
 }
-.buttons button:hover{
+.buttons a:hover{
     background-color: var(--pink-punk);
     border: 2px solid var(--green);
 }
-.buttons button:checked{
+.buttons a:checked{
     border: 2px solid var(--green);
 }
-.buttons button > a{
-    text-decoration: none;
-    color: white;  
-}
+
+
 footer{
     width: 100%;
     height: auto;
