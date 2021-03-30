@@ -1,5 +1,5 @@
 :root{
-    --pink-punk: #bd386d;
+    --pink-punk: #d13f79;
     --pink-strong: #7b1346;
     --blue-night: #091833;
     --blue-sky: #133e7c;
@@ -17,6 +17,7 @@ header{
     color: whitesmoke;
     width: 100%;
     height: 100vh;
+    background-repeat: no-repeat;
     background-image: url("https://i.postimg.cc/dVxq22Sv/cyber.gif");
 }
 nav{
@@ -29,6 +30,14 @@ nav{
     position: absolute;
     top: 5px;
     left: 10px;
+    animation: titulo 2s;
+    animation-iteration-count: infinite;
+    text-shadow: 0px 0px 5px 5px white;
+}
+@keyframes titulo {
+    0%{color: var(--green);}
+    50%{color: var(--pink-punk);}
+    100%{color: var(--green);}
 }
 .menu-icon{
     font-size: 24px;
@@ -120,10 +129,11 @@ main{
     margin-top: 20px;
 }
 .about-name{
-    color: var(--pink-punk);
+  
     font-size: 22px;  
     font-family: 'Share Tech Mono', monospace;
     margin-top: 10px;
+    text-shadow: 0px 0px 20px var(--pink-punk);
 }
 .description{
     margin-top: 15px;
@@ -141,11 +151,94 @@ main{
     color:var(--green);
     font-weight: bold;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+.cards-container{
+    width: 100%;
+    height: auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.project-card{
+    margin-top: 30px;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: var(--blue-sky);
+    border: 2px solid var(--pink-punk);
+    position: relative;
+    box-shadow: 0px 0px 4px 4px var(--pink-strong);
+   
+}
+.card-info{
+    text-align: center;
+    padding: 10px;
+    
+}
+.card-title{
+    font-family: 'Iceland', cursive;
+    font-size: 30px;
+    text-shadow: 0px 0px 25px var(--green);
+    
+}
+.card-image{
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid var(--blue-night);
+}
+.card-description{
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.card-tech{
+    font-family: 'Iceland', cursive;
+    text-align: left;
+    text-shadow: 0px 0px 20px var(--pink-punk);
 }
 .icon-tech{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: 0px 0px 25px var(--green);
+}
+.card-icon:hover{
     color: var(--green);
 }
-
+.buttons{
+    text-align: center;
+    margin-top: 5px;
+}
+.button{
+  border: 1px solid white;
+  color: var(--green);
+  background-color: transparent;
+  margin: 20px;
+  box-shadow: 0px 0px 3px 3px var(--green);
+}
+.button:hover{
+background-color: var(--pink-strong);
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.contact-title{
+    font-family: 'Iceland', cursive;
+    font-size: 30px;
+    margin-top: 20px;
+    color:var(--green);
+    font-weight: bold;
+}
+.contact{
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+.contact-info{
+   height: 100px;
+}
 
 

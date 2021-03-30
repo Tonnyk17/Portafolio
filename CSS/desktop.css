@@ -1,0 +1,62 @@
+header{
+    background-size: cover;
+}
+.main-navbar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: right;
+}
+#menu-button,.menu-icon,.navbar-label{
+    display: none;
+}
+
+.main-navbar-list{
+    position: static;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    height: 100%;
+
+}
+.navbar-item{
+    margin: 0 15px;
+}
+.navbar-item a .nav-icon{
+    display: none;
+  
+}
+.main-navbar-title{
+    position: static;
+    text-align: left;
+    margin-left: 10px;
+
+}
+.header-title{
+    font-size: 50px;
+}
+.job-title{
+    font-size: 34px;
+}
+.about-title{
+    width: 100%;
+    text-align: center;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.about-info-container{
+    width: 35%;
+    margin: 0 20px;
+}
+.about-image{
+    margin: 0 20px;
+}
+.cards-container{
+    grid-template-columns: repeat(3, 1fr);
+
+}
+footer{
+    margin-top: 40px;
+}
