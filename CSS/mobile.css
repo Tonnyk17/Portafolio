@@ -127,6 +127,7 @@ main{
     color:var(--green);
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
 }
 .about-name{
   
