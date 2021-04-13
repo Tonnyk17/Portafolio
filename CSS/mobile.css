@@ -200,11 +200,13 @@ main{
 .card-tech{
     font-family: 'Iceland', cursive;
     text-align: left;
+    font-size: 18px;
     text-shadow: 0px 0px 20px var(--pink-punk);
 }
 .icon-tech{
     width: 100%;
     display: flex;
+    font-size: 16px;
     justify-content: space-around;
     text-shadow: 0px 0px 25px var(--green);
 }
@@ -220,6 +222,7 @@ main{
   color: var(--green);
   background-color: transparent;
   margin: 20px;
+  font-size: 16px;
   box-shadow: 0px 0px 3px 3px var(--green);
 }
 .button:hover{
