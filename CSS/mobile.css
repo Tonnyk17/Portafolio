@@ -1,223 +1,230 @@
-:root{
-    --pink-punk: #d13f79;
-    --pink-strong: #7b1346;
-    --blue-night: #091833;
-    --blue-sky: #133e7c;
-    --green: rgb(0, 240, 255); 
+:root {
+  --pink-punk: #d13f79;
+  --pink-strong: #7b1346;
+  --blue-night: #091833;
+  --blue-sky: #133e7c;
+  --green: rgb(0, 240, 255);
 }
-html{
-    
-    font-family: 'Share Tech Mono', monospace;
-    scroll-behavior: smooth;
+html {
+  font-family: "Share Tech Mono", monospace;
+  scroll-behavior: smooth;
 }
-body{
-    background-image: linear-gradient(to top, #121535, #1b1a3f, #251f49, #2f2352, #3a285c);
+body {
+  background-image: linear-gradient(
+    to top,
+    #121535,
+    #1b1a3f,
+    #251f49,
+    #2f2352,
+    #3a285c
+  );
 }
-header{
-    color: whitesmoke;
-    width: 100%;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-image: url("https://i.postimg.cc/dVxq22Sv/cyber.gif");
+header {
+  color: whitesmoke;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-image: url("https://i.postimg.cc/dVxq22Sv/cyber.gif");
 }
-nav{
-    background-color: rgba(18, 21, 53, 0.95);
+nav {
+  background-color: rgba(18, 21, 53, 0.95);
 }
-.main-navbar{
-    text-align: right;
+.main-navbar {
+  text-align: right;
 }
-.main-navbar-title{
-    position: absolute;
-    top: 5px;
-    left: 10px;
+.main-navbar-title {
+  position: absolute;
+  top: 5px;
+  left: 10px;
 }
-.main-navbar-title a{
-    text-decoration: none;
-    animation: titulo 2s;
-    animation-iteration-count: infinite;
-    text-shadow: 0px 0px 5px 5px white;
+.main-navbar-title a {
+  text-decoration: none;
+  animation: titulo 2s;
+  animation-iteration-count: infinite;
+  text-shadow: 0px 0px 5px 5px white;
 }
 @keyframes titulo {
-    0%{color: var(--green);}
-    50%{color: var(--pink-punk);}
-    100%{color: var(--green);}
-}
-.menu-icon{
-    font-size: 24px;
-    padding: 10px;
-
-    text-align: center;   
-}
-.main-navbar-list{
-    list-style: none;
-    width: 100%;
-    text-align: center;
-    height: 95vh;
-    padding: 0;
-    left: -100%;
-    position: absolute;
-    transition: all 0.5s;
-    background-color: rgba(18, 21, 53, 0.95);
-}
-#menu-button:checked ~ .main-navbar-list{
-    display: block;
-    left: 0;
-    z-index: 100;   
-}
-#menu-button{
-    display: none;
-}
-.navbar-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15%;
-}
-.navbar-item a{
-    font-family: 'Share Tech Mono', monospace;
-     text-decoration: none;
-     color: whitesmoke;
-     font-size: 18px;
-}
-.navbar-item a:hover{
+  0% {
     color: var(--green);
-    text-shadow: 0px 0px 2px white;
+  }
+  50% {
+    color: var(--pink-punk);
+  }
+  100% {
+    color: var(--green);
+  }
+}
+.menu-icon {
+  font-size: 24px;
+  padding: 10px;
+
+  text-align: center;
+}
+.main-navbar-list {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  height: 95vh;
+  padding: 0;
+  left: -100%;
+  position: absolute;
+  transition: all 0.5s;
+  background-color: rgba(18, 21, 53, 0.95);
+}
+#menu-button:checked ~ .main-navbar-list {
+  display: block;
+  left: 0;
+  z-index: 100;
+}
+#menu-button {
+  display: none;
+}
+.navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+}
+.navbar-item a {
+  font-family: "Share Tech Mono", monospace;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+}
+.navbar-item a:hover {
+  color: var(--green);
+  text-shadow: 0px 0px 2px white;
 }
 
-main{
-    color: whitesmoke;
+main {
+  color: whitesmoke;
 }
 
-.header-container{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;   
-     
+.header-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.title{
-    font-size: 36px;
-    font-family: 'Iceland', cursive;
-    font-weight: bold;
-    margin-bottom: 5px;
+.title {
+  font-size: 36px;
+  font-family: "Iceland", cursive;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-.job-title{
-    color: var(--green);
-    font-size: 28px;
-    font-family: 'Iceland', cursive;
-    font-weight: bold;
-    margin-bottom: 5px;
+.job-title {
+  color: var(--green);
+  font-size: 28px;
+  font-family: "Iceland", cursive;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-.icons-container{
-    margin: 0 auto;
-    height: 50px;
+.icons-container {
+  margin: 0 auto;
+  height: 50px;
 }
-.about-me{
-    text-align: center;
+.about-me {
+  text-align: center;
 }
-.about-image{
-    width: 250px;
-    border-radius: 100%;
-    border: 2px solid var(--green);
-    margin: 10px;
-    box-shadow: 0px 0px 5px 3px var(--green);
+.about-image {
+  width: 250px;
+  border-radius: 100%;
+  border: 2px solid var(--green);
+  margin: 10px;
+  box-shadow: 0px 0px 5px 3px var(--green);
 }
-.about-title{
-    font-size: 30px;
-    font-family: 'Iceland', cursive;
-    color:var(--green);
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
+.about-title {
+  font-size: 30px;
+  font-family: "Iceland", cursive;
+  color: var(--green);
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
 }
-.about-name{
-  
-    font-size: 22px;  
-    font-family: 'Share Tech Mono', monospace;
-    margin-top: 10px;
-    text-shadow: 0px 0px 20px var(--pink-punk);
+.about-name {
+  font-size: 22px;
+  font-family: "Share Tech Mono", monospace;
+  margin-top: 10px;
+  text-shadow: 0px 0px 20px var(--pink-punk);
 }
-.description{
-    margin-top: 15px;
-    padding: 5px;
-    font-family: 'Share Tech Mono', monospace;
-    text-align: justify;
+.description {
+  margin-top: 15px;
+  padding: 5px;
+  font-family: "Share Tech Mono", monospace;
+  text-align: justify;
 }
-.projects{
-    margin-top: 50px;
+.projects {
+  margin-top: 50px;
 }
-.projects-title{
-    width: 100%;
-    text-align: center;
-    font-family: 'Iceland', cursive;
-    color:var(--green);
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 30px;
+.projects-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Iceland", cursive;
+  color: var(--green);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
 }
-.cards-container{
-    width: 100%;
-    height: auto; 
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+.cards-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
-.project-card{
-    margin-top: 30px;
-    width: 300px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: var(--blue-sky);
-    border: 2px solid var(--pink-punk);
-    position: relative;
-    box-shadow: 0px 0px 4px 4px var(--pink-strong);
-   
+.project-card {
+  margin-top: 30px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--blue-sky);
+  border: 2px solid var(--pink-punk);
+  position: relative;
+  box-shadow: 0px 0px 4px 4px var(--pink-strong);
 }
-.card-info{
-    text-align: center;
-    padding: 10px;
-    
+.card-info {
+  text-align: center;
+  padding: 10px;
 }
-.card-title{
-    font-family: 'Iceland', cursive;
-    font-size: 30px;
-    text-shadow: 0px 0px 25px var(--green);
-    
+.card-title {
+  font-family: "Iceland", cursive;
+  font-size: 30px;
+  text-shadow: 0px 0px 25px var(--green);
 }
-.card-image{
-    border-radius: 10px;
-    width: 100%;
-    height: 180px;
-    border-bottom: 2px solid var(--blue-night);
+.card-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid var(--blue-night);
 }
-.card-description{
-    text-align: justify;
-    font-size: 16px;
-    font-family: 'Share Tech Mono', monospace;
+.card-description {
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Share Tech Mono", monospace;
 }
-.card-tech{
-    font-family: 'Iceland', cursive;
-    text-align: left;
-    font-size: 18px;
-    text-shadow: 0px 0px 20px var(--pink-punk);
+.card-tech {
+  font-family: "Iceland", cursive;
+  text-align: left;
+  font-size: 18px;
+  text-shadow: 0px 0px 20px var(--pink-punk);
 }
-.icon-tech{
-    width: 100%;
-    display: flex;
-    font-size: 16px;
-    justify-content: space-around;
-    text-shadow: 0px 0px 25px var(--green);
+.icon-tech {
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-around;
+  text-shadow: 0px 0px 25px var(--green);
 }
-.card-icon:hover{
-    color: var(--green);
+.card-icon:hover {
+  color: var(--green);
 }
-.buttons{
-    text-align: center;
-    margin-top: 5px;
+.buttons {
+  text-align: center;
+  margin-top: 5px;
 }
-.button{
+.button {
   border: 1px solid white;
   color: var(--green);
   background-color: transparent;
@@ -225,27 +232,24 @@ main{
   font-size: 16px;
   box-shadow: 0px 0px 3px 3px var(--green);
 }
-.button:hover{
-background-color: var(--pink-strong);
+.button:hover {
+  background-color: var(--pink-strong);
 }
-footer{
-    text-align: center;
-    margin-top: 20px;
-    
+footer {
+  text-align: center;
+  margin-top: 20px;
 }
-.contact-title{
-    font-family: 'Iceland', cursive;
-    font-size: 30px;
-    margin-top: 20px;
-    color:var(--green);
-    font-weight: bold;
+.contact-title {
+  font-family: "Iceland", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+  color: var(--green);
+  font-weight: bold;
 }
-.contact{
-    font-family: 'Share Tech Mono', monospace;
-    color: white;
+.contact {
+  font-family: "Share Tech Mono", monospace;
+  color: white;
 }
-.contact-info{
-   height: 100px;
+.contact-info {
+  height: 100px;
 }
-
-
