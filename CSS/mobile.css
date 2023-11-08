@@ -222,13 +222,22 @@ main {
 }
 .buttons {
   text-align: center;
-  margin-top: 5px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.buttons > a {
+  text-decoration: none;
+  margin: 0;
 }
 .button {
   border: 1px solid white;
   color: var(--green);
   background-color: transparent;
-  margin: 20px;
+  margin: 0;
+  border-radius: 4px;
   font-size: 16px;
   box-shadow: 0px 0px 3px 3px var(--green);
 }
@@ -252,4 +261,7 @@ footer {
 }
 .contact-info {
   height: 100px;
+}
+.contact-info > a {
+  text-decoration: none;
 }
